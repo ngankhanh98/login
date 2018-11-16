@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:login"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="598" Width="400"
+        fw:AcrylicWindow.Enabled="True">
+
+    <Grid fw:PointerTracker.Enabled="True" Background="#01FFFFFF" Margin="0,0,0,-4">
+        <Image HorizontalAlignment="Center" Height="128" Margin="0,74,0,367" VerticalAlignment="Center" Width="174" Source="logo.png" />
+        <Label Target="{Binding ElementName=txtUsername}" HorizontalAlignment="Left" Margin="20,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.882,0.538" FontSize="14" Foreground="#FF525966" Width="98" Background="{x:Null}" Padding="0">_Username</Label>
+        <!--<TextBox Name="txtUsername" Height="23" Margin="20,268,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center" />-->
+        <TextBox x:Name="txtUsername" Margin="20,265,20,274" Text="" VerticalContentAlignment="Center" Padding="2,0,0,0"/>
+        <Label Target="{Binding ElementName=txtPassword}" HorizontalAlignment="Left" Margin="20,306,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.882,0.538" FontSize="14" Foreground="#FF525966" Width="98" Background="{x:Null}" Padding="0">_Password</Label>
+        <!--<TextBox Name="txtPassword" Height="23" Margin="20,326,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" BorderThickness="0" VerticalContentAlignment="Center" />-->
+        <PasswordBox HorizontalAlignment="Left" Margin="20,327,0,0" VerticalAlignment="Top" Width="352" Height="32" BorderThickness="2,1,1,1" VerticalContentAlignment="Center"/>
+        <Button Content="Log in" HorizontalAlignment="Center" Margin="20,397,20,129" Width="352"
+                Style="{StaticResource ButtonRevealStyle}" FontSize="15" FontWeight="Bold" Background="#FF2DB1FF" Foreground="White"/>
+
+
+
     </Grid>
 </Window>
