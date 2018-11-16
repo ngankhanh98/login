@@ -17,3 +17,6 @@ Tham khảo thiết kế từ pinterest (search với từ khóa login) và tạ
 Tài liệu giáo khoa, _Thầy Trần Duy Quang_
 
 Open source FluentWPF: https://github.com/sourcechord/FluentWPF
+
+## Thực hiện 
+1612291 - Nguyễn Thị Ngân Khánh
