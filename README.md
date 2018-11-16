@@ -1,6 +1,6 @@
 # Thiết kế màn hình đăng nhập cơ bản để người dùng nhập Username và Password. (9 điểm)
 
-- [ ] Hai label: Username và Password cần được binding với hai textbox tương ứng khi bấm Alt + U (Username textbox sẽ nhận focus) và Alt + P (Passsword textbox sẽ nhận focus) (Check file WPF 02 Basic controls, slide 2)
+- [x] Hai label: Username và Password cần được binding với hai textbox tương ứng khi bấm Alt + U (Username textbox sẽ nhận focus) và Alt + P (Passsword textbox sẽ nhận focus) (Check file WPF 02 Basic controls, slide 2)
 
 - [ ] Cần kiểm tra và hiện thông báo khi không có username và password.
 
