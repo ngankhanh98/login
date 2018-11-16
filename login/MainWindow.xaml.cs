@@ -20,9 +20,34 @@ namespace login
     /// </summary>
     public partial class MainWindow : Window
     {
+        string username = "admin";
+        string password = "123";
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string input_user = txtUsername.Text;
+            string input_password = txtPassword.Password;
+
+            if (input_user==""||input_password == "")
+            {
+                lblError.Content = "Empty username or password not allowed";
+            }
+            else if (input_user != username || input_password != password)
+            {
+                lblError.Content = "Incorrect username or password";
+            }
+            else
+            {
+                var dashboard = new Dashboard();
+                this.Close();
+                dashboard.ShowDialog();
+                
+            }
         }
     }
 }
