@@ -13,6 +13,11 @@ Tham khảo thiết kế từ pinterest (search với từ khóa login) và tạ
 ## Giao diện
 ![](https://user-images.githubusercontent.com/32817908/48627783-09267580-e9e8-11e8-8261-885dcf2f538c.png)
 
+## Hướng dẫn sử dụng
+Tải về **2 tập**: `login.exe` và `FluentWPF.dll` (trong cùng 1 thư mục)
+
+Chạy `login.exe`
+
 ## Thao khảo
 Tài liệu giáo khoa, _Thầy Trần Duy Quang_
 
