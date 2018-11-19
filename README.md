@@ -10,6 +10,18 @@
 
 Tham khảo thiết kế từ pinterest (search với từ khóa login) và tạo ra giao diện đăng nhập tốt hơn 
 
+# Tiếp tục bài tập lần trước, sau khi login thành công ở màn hình Dashboard, xây dựng như sau:
+
+- [ ] Hiển thị lưới sản phẩm gồm 3 cột, 14 sản phẩm với 3 thông tin cơ bản: Giá, Tên sản phẩm, Hình ảnh của sản phẩm.
+
+Cần chuẩn bị sẵn hình, tên, và giá lưu trong mảng (code cứng trước, sau này bổ sung nạp từ csdl lên sau)
+
+- [ ] Chú ý giá sản phẩm phải đè lên góc trên bên phải của hình sản phẩm và tên sản phẩm nằm ngay dưới hình. (Gợi ý: chỉnh cho text màu đen có độ trong suốt alpha, chữ trắng, nếu được thì tốt còn không thì thôi)
+
+- [ ] Mỗi item cần binding để hiển thị lên lưới.
+
+- [ ] Tham khảo về ListView để hiển thị đanh sách ở đây: https://www.wpf-tutorial.com/listview-control/simple-listview/
+
 ## Giao diện
 ![](https://user-images.githubusercontent.com/32817908/48627783-09267580-e9e8-11e8-8261-885dcf2f538c.png)
 
