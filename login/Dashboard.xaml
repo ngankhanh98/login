@@ -7,8 +7,28 @@
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         mc:Ignorable="d"
         Title="Dashboard" Height="450" Width="800"
-        fw:AcrylicWindow.Enabled="True">
-    <Grid>
-        
-    </Grid>
+        fw:AcrylicWindow.Enabled="True" Loaded="Dashboard_Loaded" ScrollViewer.CanContentScroll="True">
+    <ItemsControl Name ="icProducts" Margin="20">
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <Button BorderBrush="Transparent" Style="{StaticResource ButtonRevealStyle}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="{Binding Path}" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <!--<Image Width="Auto" Height="Auto" Source="{Binding Path}" Margin="10"/>-->
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <UniformGrid Columns="5" Rows="3">
+                    <UniformGrid.Background>
+                            <ImageBrush ImageSource="{Binding Path}"/>
+                        <!--<Image Source="{Binding Path}" Margin="10"/>-->
+                    </UniformGrid.Background>
+                </UniformGrid>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+    </ItemsControl>
+
 </Window>

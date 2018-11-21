@@ -7,7 +7,7 @@
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="400"
-        fw:AcrylicWindow.Enabled="True"
+        fw:AcrylicWindow.Enabled="True" ResizeMode="NoResize"
         >
 
     <Grid fw:PointerTracker.Enabled="True" Background="#01FFFFFF" Margin="0,0,0,-4">

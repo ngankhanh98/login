@@ -108,5 +108,21 @@
   <ItemGroup>
     <Resource Include="logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\204.000 - Thế Giới Phẳng - Thomas L. Friedman.png" />
+    <Resource Include="images\36.000 - Hài Hước Một Chút Thế Giới Sẽ Khác Đi - The Book Worm.png" />
+    <Resource Include="images\37.200 - Phương Pháp Giáo Dục Con Của Người Do Thái - Trần Hân.png" />
+    <Resource Include="images\44.500 - Mình Là Cá, Việc Của Mình Là Bơi - Takeshi Furukawa.png" />
+    <Resource Include="images\47.000 - Nghĩ Đơn Giản, Sống Đơn Thuần - Tolly Burkan.png" />
+    <Resource Include="images\47.000 - Đời Ngắn Đừng Ngủ Dài - Robin Sharma.png" />
+    <Resource Include="images\48.000 - Đọc Vị Bất Kỳ Ai %28Tái Bản%29 - TS. David J. Lieberman.png" />
+    <Resource Include="images\49.000 - Tuổi Trẻ Đáng Giá Bao Nhiêu Rosie Nguyễn.png" />
+    <Resource Include="images\52.000 - Đắc Nhân Tâm %28Khổ Lớn%29 - Dale Carnegie.png" />
+    <Resource Include="images\55.000 - Nhà Giả Kim - Paulo Coelho.png" />
+    <Resource Include="images\60.500 - Nghệ Thuật Tinh Tế Của Việc Đếch Quan Tâm - Mark Manson.png" />
+    <Resource Include="images\62.000 - Hành Trình Về Phương Đông %28Tái Bản%29 - Baird T. Spalding.png" />
+    <Resource Include="images\76.000 - Khi Hơi Thở Hóa Thinh Không - Paul Kalanithi.png" />
+    <Resource Include="images\81.000 - Giết Con Chim Nhại %28Tái Bản 2016%29 - Harper Lee.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
