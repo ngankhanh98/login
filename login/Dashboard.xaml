@@ -11,20 +11,21 @@
     <ItemsControl Name ="icProducts">
         <ItemsControl.ItemTemplate>
             <DataTemplate>
-                <WrapPanel Margin="20" HorizontalAlignment="Center">
-                    <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}"  >
-                        <Button.Content>
-                            <Image Source="{Binding Path}" Stretch="Uniform" />
-                        </Button.Content>
-                    </Button>
-
+                <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <WrapPanel Margin="20">
+                        <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}"  >
+                            <Button.Content>
+                                <Image Source="{Binding Path}" Stretch="Uniform" />
+                            </Button.Content>
+                        </Button>
+                        <Canvas>
+                            <Label Content="{Binding Price}" Background="Black" Foreground="White" FontSize="15px" Height="28px" Canvas.Top="0" Canvas.Right="0"/>
+                        </Canvas>
+                    </WrapPanel>
                     <Canvas>
-                        <Label Content="{Binding Price}" Background="Black" Foreground="White" FontSize="15px" Height="28px" Canvas.Top="0" Canvas.Right="0"/>
-
+                        <TextBlock Text ="{Binding Name}" FontSize="14px" Height="20px" VerticalAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Canvas.Left="0" TextWrapping="WrapWithOverflow"/>
                     </Canvas>
-
                 </WrapPanel>
-
             </DataTemplate>
         </ItemsControl.ItemTemplate>
         <ItemsControl.ItemsPanel>
@@ -32,12 +33,9 @@
                 <UniformGrid Columns="5" Rows="3">
                     <UniformGrid.DataContext>
                         <WrapPanel>
-                            <Image Source="{Binding Path}" Stretch="Uniform"/>
-                            <Label Content="{Binding Name}"/>
-                            <Canvas>
-                                <Label Content="{Binding Price}"/>
-
-                            </Canvas>
+                            <Image Source="{Binding Path}" Stretch="Uniform" />
+                            <Label Content="{Binding Price}"/>
+                            <TextBlock Text ="{Binding Name}"/>
                         </WrapPanel>
                     </UniformGrid.DataContext>
                 </UniformGrid>
