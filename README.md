@@ -35,5 +35,9 @@ Tài liệu giáo khoa, _Thầy Trần Duy Quang_
 
 Open source FluentWPF: https://github.com/sourcechord/FluentWPF
 
+QA: <br>
+https://social.msdn.microsoft.com/Forums/sqlserver/en-US/e73f7d09-11ef-45f4-99c1-24e9e42eb7cf/button-mouseover-event-hides-the-buttons-background-image?forum=wpf<br>
+https://stackoverflow.com/questions/8243181/using-uniformgrid-to-arrange-buttons-in-a-square
+
 ## Thực hiện 
 1612291 - Nguyễn Thị Ngân Khánh
