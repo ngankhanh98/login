@@ -15,7 +15,7 @@
         <Label Target="{Binding ElementName=txtUsername}" HorizontalAlignment="Left" Margin="20,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.882,0.538" FontSize="14" Foreground="#FF525966" Width="98" Background="{x:Null}" Padding="0">_Username</Label>
         <TextBox x:Name="txtUsername" Margin="20,300,20,239" Text="" VerticalContentAlignment="Center" Padding="2,0,0,0" AcceptsReturn="True"/>
         <Label Target="{Binding ElementName=txtPassword}" HorizontalAlignment="Left" Margin="20,341,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.882,0.538" FontSize="14" Foreground="#FF525966" Width="98" Background="{x:Null}" Padding="0">_Password</Label>
-        <PasswordBox Name="txtPassword" HorizontalAlignment="Left" Margin="20,362,0,0" VerticalAlignment="Top" Width="352" Height="32" BorderThickness="1,1,1,1" VerticalContentAlignment="Center" />
+        <PasswordBox Name="txtPassword" Margin="20,362,20,0" VerticalAlignment="Top" Height="32" BorderThickness="1,1,1,1" VerticalContentAlignment="Center" />
         <Button Content="Log in" HorizontalAlignment="Center" Margin="20,432,20,94" Width="352"
                 Style="{StaticResource ButtonRevealStyle}" FontSize="15" FontWeight="Bold" Background="#FF2DB1FF" Foreground="White" Click="Button_Click" IsDefault="True"/>
         <Label Name="lblError" Content="" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="352" Height="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Background="{x:Null}" Foreground="#FFF91111"/>

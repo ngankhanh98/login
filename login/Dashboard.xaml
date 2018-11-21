@@ -6,23 +6,39 @@
         xmlns:local="clr-namespace:login"
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         mc:Ignorable="d"
-        Title="Dashboard" Height="450" Width="800"
-        fw:AcrylicWindow.Enabled="True" Loaded="Dashboard_Loaded" ScrollViewer.CanContentScroll="True">
-    <ItemsControl Name ="icProducts" Margin="20" fw:PointerTracker.Enabled="True">
+        Title="Dashboard" Height="474" Width="987"
+        fw:AcrylicWindow.Enabled="True" Loaded="Dashboard_Loaded" >
+    <ItemsControl Name ="icProducts">
         <ItemsControl.ItemTemplate>
             <DataTemplate>
-                <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}">
-                    <Button.Content>
-                        <Image Source="{Binding Path}" Stretch="Uniform" Margin="5"/>
-                    </Button.Content>
-                </Button>
+                <WrapPanel Margin="20" HorizontalAlignment="Center">
+                    <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}"  >
+                        <Button.Content>
+                            <Image Source="{Binding Path}" Stretch="Uniform" />
+                        </Button.Content>
+                    </Button>
+
+                    <Canvas>
+                        <Label Content="{Binding Price}" Background="Black" Foreground="White" FontSize="15px" Height="28px" Canvas.Top="0" Canvas.Right="0"/>
+
+                    </Canvas>
+
+                </WrapPanel>
+
             </DataTemplate>
         </ItemsControl.ItemTemplate>
         <ItemsControl.ItemsPanel>
             <ItemsPanelTemplate>
                 <UniformGrid Columns="5" Rows="3">
                     <UniformGrid.DataContext>
-                        <Image Source="{Binding Path}" Stretch="Uniform"/>
+                        <WrapPanel>
+                            <Image Source="{Binding Path}" Stretch="Uniform"/>
+                            <Label Content="{Binding Name}"/>
+                            <Canvas>
+                                <Label Content="{Binding Price}"/>
+
+                            </Canvas>
+                        </WrapPanel>
                     </UniformGrid.DataContext>
                 </UniformGrid>
             </ItemsPanelTemplate>
