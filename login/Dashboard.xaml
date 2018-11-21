@@ -8,24 +8,22 @@
         mc:Ignorable="d"
         Title="Dashboard" Height="450" Width="800"
         fw:AcrylicWindow.Enabled="True" Loaded="Dashboard_Loaded" ScrollViewer.CanContentScroll="True">
-    <ItemsControl Name ="icProducts" Margin="20">
+    <ItemsControl Name ="icProducts" Margin="20" fw:PointerTracker.Enabled="True">
         <ItemsControl.ItemTemplate>
             <DataTemplate>
-                <Button BorderBrush="Transparent" Style="{StaticResource ButtonRevealStyle}">
-                    <Button.Background>
-                        <ImageBrush ImageSource="{Binding Path}" Stretch="Uniform"/>
-                    </Button.Background>
+                <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}">
+                    <Button.Content>
+                        <Image Source="{Binding Path}" Stretch="Uniform" Margin="5"/>
+                    </Button.Content>
                 </Button>
-                <!--<Image Width="Auto" Height="Auto" Source="{Binding Path}" Margin="10"/>-->
             </DataTemplate>
         </ItemsControl.ItemTemplate>
         <ItemsControl.ItemsPanel>
             <ItemsPanelTemplate>
                 <UniformGrid Columns="5" Rows="3">
-                    <UniformGrid.Background>
-                            <ImageBrush ImageSource="{Binding Path}"/>
-                        <!--<Image Source="{Binding Path}" Margin="10"/>-->
-                    </UniformGrid.Background>
+                    <UniformGrid.DataContext>
+                        <Image Source="{Binding Path}" Stretch="Uniform"/>
+                    </UniformGrid.DataContext>
                 </UniformGrid>
             </ItemsPanelTemplate>
         </ItemsControl.ItemsPanel>
