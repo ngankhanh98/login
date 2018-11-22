@@ -42,3 +42,7 @@ https://stackoverflow.com/questions/8243181/using-uniformgrid-to-arrange-buttons
 
 ## Thực hiện 
 1612291 - Nguyễn Thị Ngân Khánh
+
+## Git Repository
+https://github.com/ngankhanh98/login
+
