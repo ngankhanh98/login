@@ -12,10 +12,10 @@
         <ItemsControl.ItemTemplate>
             <DataTemplate>
                 <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
-                    <WrapPanel Margin="20">
+                    <WrapPanel Margin="30">
                         <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}"  >
                             <Button.Content>
-                                <Image Source="{Binding Path}" Stretch="Uniform" />
+                                <Image Source="{Binding Path}" Stretch="Uniform"/>
                             </Button.Content>
                         </Button>
                         <Canvas>
@@ -23,7 +23,7 @@
                         </Canvas>
                     </WrapPanel>
                     <Canvas>
-                        <TextBlock Text ="{Binding Name}" FontSize="14px" Height="20px" VerticalAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Canvas.Left="0" TextWrapping="WrapWithOverflow"/>
+                        <TextBlock Text ="{Binding Name}" FontSize="12" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Canvas.Left="0" TextWrapping="Wrap" />
                     </Canvas>
                 </WrapPanel>
             </DataTemplate>

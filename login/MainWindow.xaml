@@ -19,8 +19,5 @@
         <Button Content="Log in" HorizontalAlignment="Center" Margin="20,432,20,94" Width="352"
                 Style="{StaticResource ButtonRevealStyle}" FontSize="15" FontWeight="Bold" Background="#FF2DB1FF" Foreground="White" Click="Button_Click" IsDefault="True"/>
         <Label Name="lblError" Content="" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="352" Height="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Background="{x:Null}" Foreground="#FFF91111"/>
-
-
-
     </Grid>
 </Window>
