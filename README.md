@@ -24,6 +24,7 @@ Cần chuẩn bị sẵn hình, tên, và giá lưu trong mảng (code cứng tr
 
 ## Giao diện
 ![](https://user-images.githubusercontent.com/32817908/48627783-09267580-e9e8-11e8-8261-885dcf2f538c.png)
+![capture](https://user-images.githubusercontent.com/32817908/48879327-cd533c00-ee3d-11e8-8c8a-a0f453e42de1.PNG)
 
 ## Hướng dẫn sử dụng
 Tải về **2 tập**: `login.exe` và `FluentWPF.dll` (trong cùng 1 thư mục)
