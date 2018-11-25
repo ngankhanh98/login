@@ -23,9 +23,7 @@
                                 <Label Content="{Binding Price}" Background="Black" Foreground="White" FontSize="15px" Height="28px" Canvas.Top="0" Canvas.Right="0"/>
                             </Canvas>
                         </WrapPanel>
-                        <Canvas>
-                            <TextBlock Text ="{Binding Name}" FontSize="12" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Canvas.Left="0" TextWrapping="Wrap" />
-                        </Canvas>
+                        <TextBlock Text ="{Binding Name}" FontSize="12" Height="30" Width="180" VerticalAlignment="Center" HorizontalAlignment="Center"  TextWrapping="Wrap"  />
                     </WrapPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
