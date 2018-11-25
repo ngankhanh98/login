@@ -8,39 +8,42 @@
         mc:Ignorable="d"
         Title="Dashboard" Height="474" Width="987"
         fw:AcrylicWindow.Enabled="True" Loaded="Dashboard_Loaded" >
-    <ItemsControl Name ="icProducts">
-        <ItemsControl.ItemTemplate>
-            <DataTemplate>
-                <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
-                    <WrapPanel Margin="30">
-                        <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}"  >
-                            <Button.Content>
-                                <Image Source="{Binding Path}" Stretch="Uniform"/>
-                            </Button.Content>
-                        </Button>
+    <ScrollViewer HorizontalScrollBarVisibility="Visible">
+        <ItemsControl Name ="icProducts">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <WrapPanel Margin="30">
+                            <Button BorderBrush="Transparent" Background="Transparent" Style="{StaticResource ButtonRevealStyle}"  >
+                                <Button.Content>
+                                    <Image Source="{Binding Path}" Stretch="Uniform"/>
+                                </Button.Content>
+                            </Button>
+                            <Canvas>
+                                <Label Content="{Binding Price}" Background="Black" Foreground="White" FontSize="15px" Height="28px" Canvas.Top="0" Canvas.Right="0"/>
+                            </Canvas>
+                        </WrapPanel>
                         <Canvas>
-                            <Label Content="{Binding Price}" Background="Black" Foreground="White" FontSize="15px" Height="28px" Canvas.Top="0" Canvas.Right="0"/>
+                            <TextBlock Text ="{Binding Name}" FontSize="12" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Canvas.Left="0" TextWrapping="Wrap" />
                         </Canvas>
                     </WrapPanel>
-                    <Canvas>
-                        <TextBlock Text ="{Binding Name}" FontSize="12" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.Bottom="0" Canvas.Right="0" Canvas.Left="0" TextWrapping="Wrap" />
-                    </Canvas>
-                </WrapPanel>
-            </DataTemplate>
-        </ItemsControl.ItemTemplate>
-        <ItemsControl.ItemsPanel>
-            <ItemsPanelTemplate>
-                <UniformGrid Columns="5" Rows="3">
-                    <UniformGrid.DataContext>
-                        <WrapPanel>
-                            <Image Source="{Binding Path}" Stretch="Uniform" />
-                            <Label Content="{Binding Price}"/>
-                            <TextBlock Text ="{Binding Name}"/>
-                        </WrapPanel>
-                    </UniformGrid.DataContext>
-                </UniformGrid>
-            </ItemsPanelTemplate>
-        </ItemsControl.ItemsPanel>
-    </ItemsControl>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="3" Rows="5">
+                        <UniformGrid.DataContext>
+                            <WrapPanel>
+                                <Image Source="{Binding Path}" Stretch="Uniform" />
+                                <Label Content="{Binding Price}"/>
+                                <TextBlock Text ="{Binding Name}"/>
+                            </WrapPanel>
+                        </UniformGrid.DataContext>
+                    </UniformGrid>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+
+    </ScrollViewer>
 
 </Window>
